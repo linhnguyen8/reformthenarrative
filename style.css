@@ -1,0 +1,782 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+:root {
+  --pink:#FFADAD;
+  --l-teal:#DDF9F3;
+  /* --d-teal:#20AC90; */
+  --d-teal:#167965;
+  --yellow:#f7b538;
+  --dd-teal:#09342B;
+  --l-green:#dde7c7;
+  --d-green:#678D58;
+  --dd-green:#374B2F;
+  --l-pink:#FEDBC2;
+  --d-pink:#FF7847;
+  --dd-pink:#8F2600;
+  --l-orange:#FFE299;
+  --d-orange:#F26418;
+  --dd-orange:#C64606;
+  --l-purple:#DECBF6;
+  --d-purple:#886F9B;
+  --dd-purple:#5F1FAD;
+}
+
+body {
+  margin: 0%;
+  box-sizing: border-box;
+}
+/* -------------------------navbar----------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav .nav-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background: white;
+  box-shadow: 0px 0px 5px gray;
+}
+
+nav .nav-items .nav-link {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+nav .nav-items .nav-link a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: tahoma;
+  display: block;
+  padding: 1rem;
+  color: black;
+}
+
+nav .nav-items .nav-link .sub-menu {
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  flex-wrap: wrap;
+  visibility: hidden;
+  transition: 0.3s;
+  left: 0;
+  top: -100%;
+  z-index: 99;
+}
+
+nav .nav-items .nav-link .sub-meu ul {
+  color: gray;
+  font-size: 0.8rem;
+}
+
+nav .nav-items .nav-link:hover .sub-menu {
+  visibility: visible;
+  top: 100%;
+}
+
+.menu-header {
+  display: none;
+  padding-left: 5px;
+}
+/* -----------x-------------navbar--------------x-------------- */
+
+
+main .site-title {
+  background: url('../img/ppl.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+}
+
+main .site-title .site-background {
+  padding-top: 8rem;
+  text-align: center;
+  color: pink;
+  vertical-align: middle;
+}
+
+main .site-title h1 {
+  /* margin:0.3rem; */
+  font-size:10vw;
+  text-align: center;
+  top:50%;
+  left:50%;
+  color:#fffd82;
+}
+
+/* ------------------------all--------------------------------- */
+
+main section .container {
+  width: 100;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section .container .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section .vocab, main section .allyship, main section .books, main section .donate, main section .support-1, main section .support-2, main section .support-3, main section .justice-intro, main section .justice-1,main section .justice-2, main section .justice-3, main section .petition, main section .vote-1
+{
+  /* flex: 0 0 100%; */
+  position:relative;
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+main section .card-link, main section .card-text, main section .card-title, main section .card-sub, main section .steps {
+  font-family: Helvetica, Sans-Serif;
+}
+
+main section h5 {
+  line-height: 1.2;
+  font-size: calc(.72vw + 1rem);
+}
+
+/* ---------x--------------all----------------x---------------- */
+
+/* ------------------------home--------------------------------- */
+main section .container-main {
+  display: flex;
+}
+
+main section .main-education h4, main section .main-justice h4, main section .main-donate h4, main section .main-vote h4, main section .main-petitions h4, main section .main-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  padding-top: 5px;
+}
+
+main section .main-education p, main section .main-justice p, main section .main-donate p, main section .main-vote p, main section .main-petitions p{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+main section .main-title {
+  font-size: 1.5rem;
+}
+
+main section .main-mission {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
+
+main section .main-mission p {
+  text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+main section .main-education{
+  flex: 1;
+  background-color: var(--l-teal);
+  position: relative;
+}
+
+main section .main-justice{
+  flex: 1;
+  background-color: var(--l-pink);
+  position: relative;
+}
+
+main section .main-donate {
+  flex: 1;
+  background-color: var(--l-green);
+  position: relative;
+}
+
+main section .main-vote {
+  flex: 1;
+  background-color: var(--l-purple);
+  position: relative;
+}
+
+main section .main-petitions {
+  flex: 1;
+  background-color: var(--l-orange);
+  position: relative;
+}
+
+main section .main-education p, main section .main-justice p, main section .main-donate p, main section .main-vote p, main section .main-petitions p {
+  width:90%;
+  margin: auto;
+}
+
+main section .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  bottom: 0;
+  position: absolute;
+  line-height: inherit;
+  right:0;
+  left:0;
+  padding: 10px;
+}
+
+main section .profile-background {
+  width: 90%;
+  height: auto;
+}
+
+/* ----------x-------------home----------------x---------------- */
+/* ------------------------education--------------------------------- */
+main section .vocab {
+  flex: 1.5;
+  order: 2;
+}
+
+main section .books {
+  /* flex: 1; */
+  order: 3;
+}
+
+main section .allyship {
+  flex: 0.75;
+  order: 1;
+}
+
+main section .allyship .card, main section .vocab .card, main section .books .card {
+  background-color: var(--l-teal);
+}
+
+main section .card {
+  position: relative;
+  display: flex;
+  background-color: pink;
+  flex-direction: column;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  min-width: 0;
+  background-clip: border-box;
+
+}
+
+main section .card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+main section .card-body p {
+  text-align: left;
+  padding: 3px;
+}
+
+main section .allyship h5, main section .vocab h5, main section .books h5 {
+  color: var(--dd-teal);
+  /* color: var(--yellow); */
+}
+
+main section .allyship .card-text, main section .vocab .card-text, main section .books .card-text {
+  color: var(--yellow);
+  /* color: var(--d-teal); */
+}
+
+main section .allyship a, main section .vocab a, main section .books a {
+  /* color: var(--yellow); */
+  color: var(--d-teal);
+}
+
+main section .allyship .card-text, main section .vocab .card-text {
+  font-weight: 550;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+main section .allyship .card-link {
+  padding: 1px;
+}
+main section .vocab .card-text {
+  text-decoration: none;
+}
+
+main section .allyship .card-link, main section .vocab .card-link {
+  font-size: calc(1rem - .05vw);
+}
+
+main section .books .card-link {
+  padding: 5px;
+}
+/* ----------x-------------education----------------x---------------- */
+/* ------------------------donations--------------------------------- */
+main section .support-3 {
+  flex: 1;
+  order: 1;
+}
+
+main section .support-2 {
+  flex: 1;
+  order: 1;
+}
+
+main section .support-1 {
+  flex: 1;
+  order: 1;
+}
+
+main section .donate h5, main section .support-1 h5, main section .support-2 h5, main section .support-3 h5 {
+  color: var(--dd-green);
+}
+
+main section .donate .card-text {
+  color: var(--yellow);
+  font-weight: 700;
+  font-size: calc(1rem + 0.3vw);
+}
+
+main section .support-1 .card-text, main section .support-2 .card-text, main section .support-3 .card-text {
+  color: var(--yellow);
+  font-weight: 525;
+}
+
+main section .donate .card, main section .support-1 .card, main section .support-2 .card, main section .support-3 .card {
+  background-color: var(--l-green);
+}
+
+main section .donate .card-link {
+  font-size: calc(1rem - .05vw);
+}
+
+main section .support-1 a, main section .support-2 a, main section .support-3 a {
+  color: var(--d-green);
+  font-size: calc(1rem - 0.2vw);
+}
+
+main section .donate a {
+  color: var(--d-green);
+  font-weight: 525;
+  font-size: 1rem;
+}
+
+
+/* ----------x-------------donations----------------x---------------- */
+/* ------------------------justice--------------------------------- */
+main section .card-text .name {
+  /* color: yellow; */
+  font-weight: bold;
+  color: var(--d-teal);
+  font-size: calc(1rem + 0.05vw);
+}
+
+main section .justice-1 {
+  flex: 1;
+}
+
+main section .justice-2 {
+  flex: 1;
+}
+
+main section .justice-3 {
+  flex: 1;
+}
+
+main section .justice-4 {
+  flex: 1;
+}
+
+main section .justice-intro h5, main section .justice-1 h5 {
+  color: var(--dd-pink);
+}
+
+main section .justice-intro .card, main section .justice-1 .card, main section .justice-2 .card, main section .justice-3 .card {
+  background-color: var(--l-pink);
+}
+
+main section .justice-intro .card-text {
+  color: var(--d-teal);
+  font-weight: bold;
+}
+
+main section .justice-1 a, main section .justice-2 a, main section .justice-3 a {
+  color: var(--d-pink);
+}
+
+main section .justice-1 .card-text, main section .justice-2 .card-text, main section .justice-3 .card-text {
+  font-size: calc(1rem - .1vw);
+}
+
+main section .justice-1 .card-link, main section .justice-2 .card-link, main section .justice-3 .card-link {
+  font-size: calc(1rem - .1vw);
+}
+
+/* --------x---------------justice-----------------x--------------- */
+/* ------------------------petitions--------------------------------- */
+main section .petition .card {
+  background-color: var(--l-orange);
+}
+
+main section .petition .card-link {
+  padding: 7px;
+}
+
+main section .petition a {
+  color: var(--d-orange);
+  font-weight: bold;
+}
+
+main section .petition h5 {
+  color: var(--dd-orange);
+}
+/* ---------x--------------petitions----------------x---------------- */
+/* ------------------------------vote-------------------------------- */
+main section .vote-title .card {
+  background-color: var(--d-purple);
+}
+
+main section .vote-title {
+  position: relative;
+  width: 100%;
+}
+
+main section .vote-title h4 {
+  font-size: calc(2rem + 2vw);
+  text-align: center;
+  color: white;
+  font-family: Rockwell;
+  text-transform: uppercase;
+}
+
+main section .vote-title h6 {
+  text-align: center;
+  color: white;
+  font-family: Rockwell;
+}
+
+main section .vote-intro .card-title, main section .vote-1 .card-title, main section .vote-2 .card-title {
+  color: var(--d-purple);
+}
+
+main section .vote-2, main section .vote-intro {
+  position:relative;
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+main section .vote-intro .card, main section .vote-1 .card , main section .vote-2 .card {
+  background-color: var(--l-purple);
+}
+
+main section .vote-1 .card-link, main section .vote-2 .card-link, main section .card-sub {
+  font-size: calc(1rem - .1vw);
+  line-height: 20px;
+}
+
+main section .steps {
+  font-weight: bold;
+  color: var(--yellow);
+  font-size: calc(1rem + 0.05vw);
+}
+
+main section .card-sub {
+  text-indent: 1.5em;
+}
+
+main section .card-sub span {
+  text-decoration: underline;
+}
+
+main section .vote-2 a {
+  color: var(--dd-purple);
+}
+/* -------------x----------------vote---------------x---------------- */
+/* ------------------------------stories-------------------------------- */
+main section .stories, main section .contact {
+  text-align: center;
+  margin: auto;
+}
+
+main section .stories h5, main section .contact h5{
+  font-size: calc(.72vw + 1rem);
+  font-family: Helvetica, Sans-Serif;
+  padding: 10px;
+}
+
+main section .stories h6 {
+  font-family: Helvetica, Sans-Serif;
+}
+
+/* -------------x----------------stories---------------x---------------- */
+/* ------------------------------contact-------------------------------- */
+
+main section .contact {
+  width: 60%;
+  margin: auto;
+}
+
+main section .contact p {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 0.9rem;
+}
+
+main section .contact-box {
+  display: flex;
+  justify-content: center;
+}
+
+main section .fields {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+main section .field-half {
+  flex-basis: 48%;
+  width: 30vw;
+  border-radius: 3px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  font-size: 1rem;
+}
+
+textarea:focus, input:focus {
+  border: 1px solid var(--yellow);
+}
+
+main section .actions {
+  width: 25%;
+  list-style-type: none;
+  margin: auto;
+}
+
+main section .actions li input {
+  background-color:#fffd82;
+}
+
+
+
+/* -------------x----------------contact---------------x---------------- */
+/* ------------------------main-content index ----------------------- */
+
+.footer {
+  background-color:#fffd82;
+  position: relative;
+  margin-top: 100px;
+  height: 25vh;
+  clear: both;
+}
+
+.footer p {
+  text-align: center;
+  justify-content:center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: Helvetica, Sans-Serif;
+}
+
+/* -------------x----------main-content index -----------x----------- */
+
+
+
+
+
+
+/* --------------------------media-queries----------------------------- */
+
+@media(max-width: 767px){
+  body {
+    /* box-sizing: border-box; */
+  }
+
+  nav .nav-items {
+    display: table;
+    width: 100%;
+  }
+  nav .nav-items .nav-link .sub-menu {
+    position: relative;
+    left: 0;
+    top: 0;
+    transition: none;
+    visibility: visible;
+    display: none;
+    z-index: 1;
+  }
+  nav .nav-items .nav-link .display {
+    display: block;
+  }
+  nav .menu-content {
+    display: none;
+  }
+  nav .menu-header {
+    display: block;
+    background: white;
+    text-align: right;
+    padding: 1rem;
+  }
+
+  nav .show {
+    display: block;
+  }
+  .fa-bars {
+    color: black;
+    border: 0.1rem solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+  }
+  main .site-title {
+    height: 40vh;
+    /* background-size: cover; */
+    /* background-size: contain; */
+    width: 100%;
+  }
+
+main .site-title h1 {
+  font-size: 3rem;
+}
+
+main section .main-mission {
+  width: 85%;
+}
+
+main section .container .row {
+  flex-direction: column;
+}
+
+main section .container-main {
+  flex-direction: column;
+}
+
+main section .vocab {
+  order: 1;
+}
+
+main section .allyship {
+  order: 2;
+}
+
+main section .books {
+  order: 3;
+}
+
+
+/* -----------x--------------media-queries-------------x--------------- */
+
+
+
+
+p{
+  text-align: center;
+}

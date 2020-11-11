@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Reform the Narrative</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="a blog to amplify the voices of BIPOC teens & an educational site on allyship">
+    <script src="https://kit.fontawesome.com/9b7f8d76e5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!---navigation------------------------------------------------->
+
+    <nav>
+          <div class="menu-header">
+            <i class="fa fa-bars"></i>
+          </div>
+          <div class="menu-content">
+            <ul class="nav-items">
+              <li class="nav-link">
+                <a href="index.html">home</a>
+              </li>
+              <li class="nav-link">
+                <a href="stories.html">stories</a>
+              </li>
+              <li class="nav-link">
+                <a href="education.html">educational resources</a>
+              </li>
+              <li class="nav-link">
+                <a href="#" class="dropbtn">action steps to take
+                <i class="fa fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                      <li><a href="justice.html">justice for ____</a></li>
+                      <li><a href="vote.html">vote</a></li>
+                      <li><a href="donations.html">donations</a></li>
+                      <li><a href="petitions.html">other petitions</a></li>
+                    </ul>
+              </li>
+              <li class="nav-link">
+                <a href="contact.html">contact</a>
+              </li>
+            </ul>
+          </div>
+    </nav>
+    <!---navigation-------------------->
+<!-- main site-------------------------------------------->
+<main>
+  <section class="site-title">
+    <div class="site-background">
+      <h1>Reform the Narrative</h1>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+        <div class="row">
+          <div class="contact">
+            <h5>Contact</h5>
+            <p>When gathering these resources, I tried my best to review each form of content with sensitivity. However, I am just an 18-year-old high schooler and I still have a lot to learn through this process as well. The mission of ‘Reform the Narrative” is to amplify voices, so I am willing to listen to your input and learn from them. If you have ANY concerns, questions, or suggestions, I encourage you to contact me through the form below or simply email me letsreformthenarrative@gmail.com. I want this platform to be collaborative and celebratory of different ideas. This is still a work in progress; there are still many resources that can be added to this site to generate inclusivity. If you have any suggestions or recommendations on articles, books, or other resources I can add, please feel free to contact me as well! I look forward to hearing from you!</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-box">
+        <form method="POST" data-netlify="true" class="form-wrapper">
+          <div class="fields">
+            <div class="field-half">
+              <input type="text" name="name" placeholder="Name*">
+            </div>
+            <div class="field-half">
+              <input type="text" name="email" placeholder="Email*">
+            </div>
+          </div>
+            <div class="field">
+              <textarea name="message" placeholder="Message* "rows="15"></textarea>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="SEND" class="button"></li>
+            </ul>
+        </form>
+      </div>
+  </section>
+</main>
+
+
+
+
+
+
+
+
+<!-- main site-xxx----------------------------------->
+
+
+
+
+
+
+
+
+    <script src="./js/jquery.3.5.1.min.js"></script>
+    <script>
+      $('.dropbtn').click(function(){
+        $('.sub-menu').toggleClass('display');
+      });
+      $('.fa-bars').click(function(){
+        $('.menu-content').toggleClass('show');
+      });
+    </script>
+    <script src="./js/main.js"></script>
+    <footer class="footer">
+      <br>
+      <p>&#169; Reform the Narrative</p>
+      <br>
+      <p>Contact: letsreformthenarrative@gmail.com</p>
+      <br>
+      <p>Instagram: @reformthenarrative </p>
+    </footer>
+  </body>
+
+
+
+</html>
