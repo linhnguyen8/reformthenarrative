@@ -255,7 +255,8 @@ main section .main-education h4, main section .main-justice h4, main section .ma
   text-align: center;
   text-transform: uppercase;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  padding-top: 5px;
+  padding: 5px;
+  font-size: 1rem;
 }
 
 main section .main-education p, main section .main-justice p, main section .main-donate p, main section .main-vote p, main section .main-petitions p{
@@ -331,7 +332,6 @@ main section .profile-background {
   width: 90%;
   height: auto;
 }
-
 /* ----------x-------------home----------------x---------------- */
 /* ------------------------education--------------------------------- */
 main section .vocab {
@@ -362,7 +362,6 @@ main section .card {
   overflow-wrap: break-word;
   min-width: 0;
   background-clip: border-box;
-
 }
 
 main section .card-body {
@@ -383,11 +382,9 @@ main section .allyship h5, main section .vocab h5, main section .books h5 {
 
 main section .allyship .card-text, main section .vocab .card-text, main section .books .card-text {
   color: var(--yellow);
-  /* color: var(--d-teal); */
 }
 
 main section .allyship a, main section .vocab a, main section .books a {
-  /* color: var(--yellow); */
   color: var(--d-teal);
 }
 
@@ -413,22 +410,11 @@ main section .books .card-link {
 }
 /* ----------x-------------education----------------x---------------- */
 /* ------------------------donations--------------------------------- */
-main section .support-3 {
-  flex: 1;
-  order: 1;
+main section .donate .card, main section .support-1 .card, main section .support-2 .card, main section .support-3 .card, main section .support-0 .card {
+  background-color: var(--l-green);
 }
 
-main section .support-2 {
-  flex: 1;
-  order: 1;
-}
-
-main section .support-1 {
-  flex: 1;
-  order: 1;
-}
-
-main section .donate h5, main section .support-1 h5, main section .support-2 h5, main section .support-3 h5 {
+main section .donate h5, main section .support-1 h5, main section .support-2 h5, main section .support-3 h5, main section .support-0 h5 {
   color: var(--dd-green);
 }
 
@@ -438,22 +424,8 @@ main section .donate .card-text {
   font-size: calc(1rem + 0.3vw);
 }
 
-main section .support-1 .card-text, main section .support-2 .card-text, main section .support-3 .card-text {
-  color: var(--yellow);
-  font-weight: 525;
-}
-
-main section .donate .card, main section .support-1 .card, main section .support-2 .card, main section .support-3 .card {
-  background-color: var(--l-green);
-}
-
 main section .donate .card-link {
   font-size: calc(1rem - .05vw);
-}
-
-main section .support-1 a, main section .support-2 a, main section .support-3 a {
-  color: var(--d-green);
-  font-size: calc(1rem - 0.2vw);
 }
 
 main section .donate a {
@@ -462,7 +434,30 @@ main section .donate a {
   font-size: 1rem;
 }
 
+main section .support-3, main section .support-2, main section .support-1{
+  flex: 1;
+  order: 1;
+}
 
+main section .support-1 .card-text, main section .support-2 .card-text, main section .support-3 .card-text, main section .support-0 a {
+  color: var(--yellow);
+  font-weight: 525;
+}
+
+main section .support-1 a, main section .support-2 a, main section .support-3 a {
+  color: var(--d-green);
+  font-size: calc(1rem - 0.2vw);
+}
+
+main section .support-0 {
+  position:relative;
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+main section .support-0 .card-text {
+  padding: 7px;
+}
 /* ----------x-------------donations----------------x---------------- */
 /* ------------------------justice--------------------------------- */
 main section .card-text .name {
@@ -472,19 +467,7 @@ main section .card-text .name {
   font-size: calc(1rem + 0.05vw);
 }
 
-main section .justice-1 {
-  flex: 1;
-}
-
-main section .justice-2 {
-  flex: 1;
-}
-
-main section .justice-3 {
-  flex: 1;
-}
-
-main section .justice-4 {
+main section .justice-1, main section .justice-2, main section .justice-3 {
   flex: 1;
 }
 
@@ -505,11 +488,7 @@ main section .justice-1 a, main section .justice-2 a, main section .justice-3 a 
   color: var(--d-pink);
 }
 
-main section .justice-1 .card-text, main section .justice-2 .card-text, main section .justice-3 .card-text {
-  font-size: calc(1rem - .1vw);
-}
-
-main section .justice-1 .card-link, main section .justice-2 .card-link, main section .justice-3 .card-link {
+main section .justice-1 .card-text, main section .justice-2 .card-text, main section .justice-3 .card-text, main section .justice-1 .card-link, main section .justice-2 .card-link, main section .justice-3 .card-link{
   font-size: calc(1rem - .1vw);
 }
 
@@ -618,7 +597,7 @@ main section .contact {
 }
 
 main section .contact p {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: Verdana, sans-serif;
   font-size: 0.9rem;
 }
 
@@ -657,13 +636,14 @@ textarea:focus, input:focus {
 }
 
 main section .actions {
-  width: 25%;
   list-style-type: none;
-  margin: auto;
+  margin: auto 0;
+  text-align: center;
 }
 
-main section .actions li input {
+button {
   background-color:#fffd82;
+  width: 10em;
 }
 
 
@@ -716,6 +696,9 @@ main section .actions li input {
   }
   nav .nav-items .nav-link .display {
     display: block;
+  }
+  nav .nav-items {
+    box-shadow: none;
   }
   nav .menu-content {
     display: none;
@@ -771,6 +754,14 @@ main section .books {
   order: 3;
 }
 
+main section .contact {
+  width: 95%;
+  margin: auto;
+}
+
+main section .field-half {
+  width: 47vw;
+}
 
 /* -----------x--------------media-queries-------------x--------------- */
 
