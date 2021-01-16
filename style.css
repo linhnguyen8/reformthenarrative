@@ -23,7 +23,7 @@ body {
     line-height:1;
 }
 
-article,aside,details,figcaption,figure,
+aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
     display:block;
 }
@@ -96,7 +96,6 @@ input, select {
 :root {
   --pink:#FFADAD;
   --l-teal:#DDF9F3;
-  /* --d-teal:#20AC90; */
   --d-teal:#167965;
   --yellow:#f7b538;
   --dd-teal:#09342B;
@@ -112,6 +111,7 @@ input, select {
   --l-purple:#DECBF6;
   --d-purple:#886F9B;
   --dd-purple:#5F1FAD;
+  --l-gray:#EBEBEB;
 }
 
 body {
@@ -122,6 +122,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  /* box-sizing: border-box; */
 }
 
 html, body {
@@ -201,7 +202,6 @@ main .site-title {
 main .site-title .site-background {
   padding-top: 8rem;
   text-align: center;
-  color: pink;
   vertical-align: middle;
 }
 
@@ -331,6 +331,13 @@ main section .icon {
 main section .profile-background {
   width: 90%;
   height: auto;
+}
+
+main section .main-divide {
+  width: 100%;
+  margin: auto;
+  background-color: var(--l-gray);
+  padding: 20px;
 }
 /* ----------x-------------home----------------x---------------- */
 /* ------------------------education--------------------------------- */
@@ -579,13 +586,77 @@ main section .stories, main section .contact {
 }
 
 main section .stories h5, main section .contact h5{
-  font-size: calc(.72vw + 1rem);
+  font-size: calc(.72vw + 2rem);
   font-family: Helvetica, Sans-Serif;
   padding: 10px;
 }
 
 main section .stories h6 {
   font-family: Helvetica, Sans-Serif;
+}
+
+main section .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section .content {
+  width: 100%;
+}
+
+main section .stories-grid {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3,minmax(0,1fr));
+  text-align: center;
+  margin: auto;
+}
+
+main section .stories-sq {
+  box-sizing: border-box;
+  position: relative;
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+
+main section .stories-pic {
+  width: 85%;
+  height: auto;
+}
+
+
+main section .stories-intro {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+main section .stories-intro h1 {
+  font-size: calc((3 - 1) * 1.2vh + 1rem);
+  padding-bottom: 10px;
+}
+
+main section .stories-excerpt {
+  position: relative;
+  display: flex;
+  width: 85%;
+  text-align: center;
+  margin: auto;
+}
+
+main section .stories-excerpt p {
+  font-size: calc((1 - 1) * 1.2vh + 1rem);
+  line-height: 1.5em;
+  padding-bottom: 7px;
+}
+
+main section .stories-intro a {
+  color: black;
 }
 
 /* -------------x----------------stories---------------x---------------- */
@@ -646,9 +717,73 @@ button {
   width: 10em;
 }
 
-
-
 /* -------------x----------------contact---------------x---------------- */
+/* ------------------------------stories-post-------------------------------- */
+main article section .stories-wrapper {
+  width: calc(100% - 50vw);
+  margin: auto;
+  box-sizing: content-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+main article section .stories-item, main article section .stories-content {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+main article section #stories-title h1 {
+  font-weight: 700;
+  line-height: 1.4em;
+  font-size: calc((4 - 1) * 1.2vh + 1rem);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+main article section #stories-sub h2 {
+  font-size: calc((1 - 1) * 1.2vh + 1rem);
+  font-weight: lighter;
+  padding-bottom: 0.5em;
+}
+
+main article section #stories-profile {
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+main article section #stories-bio {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+main article section #stories-bio em {
+  font-size: calc(1rem + 0.15vw);
+  line-height: 1.15em;
+}
+
+main .stories-q {
+  padding-top: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+main article section .stories-q {
+  font-size: calc(1rem + 0.2vw);
+  text-align: left;
+}
+
+main article section .stories-a {
+  font-size: calc(1rem + 0.15vw);
+  line-height: 1.2em;
+}
+
+main article section .stories-a a {
+  color: var(--d-orange);
+}
+/* -------------x----------------stories-post---------------x---------------- */
 /* ------------------------main-content index ----------------------- */
 
 .footer {
@@ -734,6 +869,19 @@ main section .main-mission {
   width: 85%;
 }
 
+main article section .stories-wrapper {
+  width: calc(100% - 10vw);
+}
+
+main section .stories-grid {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
 main section .container .row {
   flex-direction: column;
 }
@@ -764,10 +912,3 @@ main section .field-half {
 }
 
 /* -----------x--------------media-queries-------------x--------------- */
-
-
-
-
-p{
-  text-align: center;
-}
