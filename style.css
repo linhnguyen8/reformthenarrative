@@ -882,6 +882,10 @@ main section .stories-grid {
   margin: auto;
 }
 
+main article section .stories-q {
+  font-weight: 500;
+}
+
 main section .container .row {
   flex-direction: column;
 }
