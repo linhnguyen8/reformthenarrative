@@ -229,7 +229,12 @@ main section .container .row {
 
 main section .vocab, main section .allyship, main section .books, main section .donate, main section .support-1, main section .support-2, main section .support-3, main section .justice-intro, main section .justice-1,main section .justice-2, main section .justice-3, main section .petition, main section .vote-1
 {
-  /* flex: 0 0 100%; */
+  position:relative;
+  margin: 10px;
+  width: calc(100% - 20px);
+}
+
+main section .justice-asian, main section .support-0, main section .vote-2, main section .vote-intro {
   position:relative;
   margin: 10px;
   width: calc(100% - 20px);
@@ -255,8 +260,8 @@ main section .main-education h4, main section .main-justice h4, main section .ma
   text-align: center;
   text-transform: uppercase;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
-  padding: 5px;
-  font-size: 1rem;
+  padding: 9px;
+  font-size: 1.25rem;
 }
 
 main section .main-education p, main section .main-justice p, main section .main-donate p, main section .main-vote p, main section .main-petitions p{
@@ -275,8 +280,10 @@ main section .main-mission {
 
 main section .main-mission p {
   text-align: center;
+  margin: auto;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 1rem;
+  width: 90%;
 }
 
 main section .main-education{
@@ -415,6 +422,10 @@ main section .allyship .card-link, main section .vocab .card-link {
 main section .books .card-link {
   padding: 5px;
 }
+
+main section .ally-resources .card-link {
+  padding: 4px;
+}
 /* ----------x-------------education----------------x---------------- */
 /* ------------------------donations--------------------------------- */
 main section .donate .card, main section .support-1 .card, main section .support-2 .card, main section .support-3 .card, main section .support-0 .card {
@@ -456,19 +467,12 @@ main section .support-1 a, main section .support-2 a, main section .support-3 a 
   font-size: calc(1rem - 0.2vw);
 }
 
-main section .support-0 {
-  position:relative;
-  margin: 10px;
-  width: calc(100% - 20px);
-}
-
 main section .support-0 .card-text {
   padding: 7px;
 }
 /* ----------x-------------donations----------------x---------------- */
 /* ------------------------justice--------------------------------- */
 main section .card-text .name {
-  /* color: yellow; */
   font-weight: bold;
   color: var(--d-teal);
   font-size: calc(1rem + 0.05vw);
@@ -478,11 +482,11 @@ main section .justice-1, main section .justice-2, main section .justice-3 {
   flex: 1;
 }
 
-main section .justice-intro h5, main section .justice-1 h5 {
+main section .justice-intro h5, main section .justice-1 h5, main section .justice-asian h5 {
   color: var(--dd-pink);
 }
 
-main section .justice-intro .card, main section .justice-1 .card, main section .justice-2 .card, main section .justice-3 .card {
+main section .justice-intro .card, main section .justice-1 .card, main section .justice-2 .card, main section .justice-3 .card, main section .justice-asian .card {
   background-color: var(--l-pink);
 }
 
@@ -491,11 +495,11 @@ main section .justice-intro .card-text {
   font-weight: bold;
 }
 
-main section .justice-1 a, main section .justice-2 a, main section .justice-3 a {
+main section .justice-1 a, main section .justice-2 a, main section .justice-3 a, main section .justice-asian a {
   color: var(--d-pink);
 }
 
-main section .justice-1 .card-text, main section .justice-2 .card-text, main section .justice-3 .card-text, main section .justice-1 .card-link, main section .justice-2 .card-link, main section .justice-3 .card-link{
+main section .justice-1 .card-text, main section .justice-2 .card-text, main section .justice-3 .card-text, main section .justice-1 .card-link, main section .justice-2 .card-link, main section .justice-3 .card-link, main section .justice-asian .card-link {
   font-size: calc(1rem - .1vw);
 }
 
@@ -544,12 +548,6 @@ main section .vote-title h6 {
 
 main section .vote-intro .card-title, main section .vote-1 .card-title, main section .vote-2 .card-title {
   color: var(--d-purple);
-}
-
-main section .vote-2, main section .vote-intro {
-  position:relative;
-  margin: 10px;
-  width: calc(100% - 20px);
 }
 
 main section .vote-intro .card, main section .vote-1 .card , main section .vote-2 .card {
@@ -773,6 +771,7 @@ main .stories-q {
 main article section .stories-q {
   font-size: calc(1rem + 0.2vw);
   text-align: left;
+  font-weight: 500;
 }
 
 main article section .stories-a {
@@ -862,7 +861,7 @@ main article section .stories-a a {
   }
 
 main .site-title h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 
 main section .main-mission {
